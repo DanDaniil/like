@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<center><button onclick="bup()"><img id="1" src="heart2.png"></button>
+<h1 id="2">99</h1></center>
+</body>
+<script>
+    like=false
+    i=99
+    function bup(){
+        like=!like
+        if (like){
+document.getElementById('1').src='heart3.jpg'
+            i=i+1
+        document.getElementById('2').innerHTML=i
+        }
+        else {
+            document.getElementById('1').src='heart2.png'
+            i=i-1
+        document.getElementById('2').innerHTML=i
+        }
+    }
+</script>
+</html>
